@@ -97,17 +97,17 @@ function handleChange(event, name) {
    if(!checkEmpty(inputValue)) {
        allBlocks[index].lastElementChild.textContent = "Field cannot be empty..!";
         errorFound = true;
-   }else if(name === "firstname" && !customCheckCharacter(inputValue) || 
-            name === "lastname" && !customCheckCharacter(inputValue)) {
+   }else if(name === "firstname" && !checkCharacter(inputValue) || 
+            name === "lastname" && !checkCharacter(inputValue)) {
         getMessage(index, "min 4, max 10 chars, Numbers and special characters are not allowed..!");
         errorFound = true;
-   }else if(name === "email" && !customEmailCheck(inputValue)) {
+   }else if(name === "email" && !checkEmail(inputValue)) {
         getMessage(index, "Not a valid email..!");
         errorFound = true;
-   }else if(name === "password" && !customPasswordCheck(inputValue)) {
+   }else if(name === "password" && !checkPassword(inputValue)) {
         getMessage(index, "min 8 and max 15 one lower, one upper case, one special character..!");
         errorFound = true;
-   }else if(name === "phonenumber" && !customPhoneCheck(inputValue)) {
+   }else if(name === "phonenumber" && !checkPhoneNumber(inputValue)) {
         getMessage(index, "Not a valid phone number..!");
         errorFound = true;
     }
