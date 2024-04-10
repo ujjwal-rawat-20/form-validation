@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .container {
+            width: 80%;   
+            /* background-color: #eee; */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .formDataContainer {
+            padding: 20px;
+        }
+
+        .dataBlock {
+            width: 30%;
+            margin: auto;
+            text-align: start;
+            padding: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dataLabel {
+            color: #ccc;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .data {
+            font-size: 19px;
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       <div>
+            <h2 style="color: white;">Form Data</h2>
+       </div>
+        <div class="formDataContainer">
+
+        </div>
+    </div>
+
+
+    <script src="./dataScript.js"></script>
+</body>
+</html>

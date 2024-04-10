@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="./display.html" id="myForm">
+            <div class="block">
+                <label for="firstname">First Name</label>
+                <input type="text" name="" id="firstname" onkeyup="handleChange(event, 'firstname')" />
+                <p class="error">error</p>
+            </div>
+            <div class="block">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="" id="lastname" onkeyup="handleChange(event, 'lastname')">
+                <p class="error">error</p>
+            </div>
+            <div class="block">
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" onkeyup="handleChange(event, 'email')">
+                <p class="error">error</p>
+            </div>
+            <div class="block">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" onkeyup="handleChange(event, 'password')">
+                <p class="error">error</p>
+            </div>
+            <div class="block">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" name="" id="phonenumber" onkeyup="handleChange(event, 'phonenumber')">
+                <p class="error">error</p>
+            </div>
+            <div class="block">
+                <button class="submitButton" type="submit">Submit</button>
+            </div>
+        </div>
+    
+        </form>
+
+        <script defer src="./script.js"></script>
+</body>
+</html>

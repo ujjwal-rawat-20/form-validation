@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: start;
+    padding: 5px 0;
+    display: none;
+}
+
+.see {
+    display: block;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 60%;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 20px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+label {
+    text-align: start;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
